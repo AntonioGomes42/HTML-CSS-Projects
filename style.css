@@ -3,6 +3,8 @@ body{
     padding: 0;
     font-family: sans-serif;
     background: #34495e;
+    width: 100vw;
+    height: 100vh;
 }
 
 #container{
@@ -62,4 +64,67 @@ body{
 
 #container input[type = "submit"]:hover{
     background:#2ecc71;
+}
+
+@media screen and (max-width: 430px){
+    #container{
+        width: calc(100vw - 20px);
+        padding: 40px 0px;
+    }
+    #container input[type = "text"], #container input[type = "password"]{
+        padding: 14px 15px;
+    }
+    #container input[type = "text"]:focus, #container input[type = "password"]:focus{
+        width:  calc(100% - 120px);
+    }
+
+}
+
+@media screen and (max-width: 330px){
+
+    #container input[type = "text"], #container input[type = "password"]{
+        padding: 14px 10px;
+    }
+    #container input[type = "text"]:focus, #container input[type = "password"]:focus{
+        width:  calc(100% - 80px);
+    }
+
+}
+
+@media screen and (max-width: 310px){
+
+    #container input[type = "text"]:focus, #container input[type = "password"]:focus{
+        width:  calc(100% - 60px);
+    }
+
+}
+
+@media screen and (max-width: 270px){
+
+    #container input[type = "text"]:focus, #container input[type = "password"]:focus{
+        width:  calc(100% - 40px);
+    }
+
+}
+
+@media screen and (max-width: 260px){
+
+    #container input[type = "text"]:focus, #container input[type = "password"]:focus{
+        width:  calc(100% - 60px);
+    }
+    #container input[type = "text"], #container input[type = "password"]{
+        width: 150px;
+    }
+
+}
+
+@media screen and (max-width: 230px){
+
+    #container input[type = "text"]:focus, #container input[type = "password"]:focus{
+        width:  calc(100% - 60px);
+    }
+    #container input[type = "text"], #container input[type = "password"]{
+        width: 140px;
+    }
+
 }
